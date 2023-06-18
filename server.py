@@ -23,4 +23,4 @@ def git():
     for command in git_commands:
         subprocess.run(command, shell=True)
 
-git()
+# git()
