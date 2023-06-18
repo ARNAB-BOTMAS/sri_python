@@ -12,11 +12,9 @@ def git():
 
     # Git commands
     git_commands = [
-        "cls",
         "git add .",
         f'git commit -m "{commit_message}"',
-        "git remote add origin https://github.com/ARNAB-BOTMAS/sri_python.git",
-        "git push -u origin master"
+        "git push -u origin main"
     ]
 
     # Execute git commands
