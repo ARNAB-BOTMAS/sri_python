@@ -12,7 +12,7 @@ def git():
     git_commands = [
         "git add .",
         f'git commit -m "{commit_message}"',
-        "git push"
+        "git push origin main"
     ]
 
     # Execute git commands
