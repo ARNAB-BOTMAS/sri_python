@@ -1,18 +1,19 @@
-import git
+import os
+import subprocess
 
-# Specify the path to your local repository
-repo_path = "D:\New folder\sri_python"
+# Change to the directory where the Python file is located
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# Open the repository
-repo = git.Repo(repo_path)
-
-# Add all files to the staging area
-repo.git.add(all=True)
-
-# Commit the changes
+# Commit message
 commit_message = "Automatic commit"
-repo.index.commit(commit_message)
 
-# Push the changes to the remote repository
-origin = repo.remote(name='origin')
-origin.push()
+# Git commands
+git_commands = [
+    "git add .",
+    f'git commit -m "{commit_message}"',
+    "git push"
+]
+
+# Execute git commands
+for command in git_commands:
+    subprocess.run(command, shell=True)
