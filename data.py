@@ -2,6 +2,7 @@ import psycopg2
 import json
 import threading
 import mkdirc
+import server
 
 # Connection parameters
 def database(dir):
@@ -50,4 +51,6 @@ def database(dir):
 dir = "database"
 mkdirc.create_directory(dir)
 database(dir)
+server.git()
+
 
