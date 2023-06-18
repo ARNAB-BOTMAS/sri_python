@@ -17,7 +17,7 @@ def git():
         "git add .",
         f'git commit -m "{commit_message}"',
         # "git pull origin main --allow-unrelated-histories",
-        "git push main"
+        "git push origin main"
     ]
 
     # Execute git commands
