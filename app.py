@@ -1,6 +1,5 @@
 import psycopg2
 import json
-import threading
 from server import app
 
 # Connection parameters
