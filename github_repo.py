@@ -3,7 +3,7 @@ import subprocess
 
 # Run git config commands to set user email and name
 subprocess.run('git config --global user.email "arnabmondal203@gmail.com"', shell=True)
-subprocess.run('git config --global user.name "ARNAB-BOTMAS"', shell=True)
+subprocess.run('git config --global user.name "Arnab Mondal"', shell=True)
 
 def git():
     # Change to the directory where the Python file is located
@@ -16,10 +16,10 @@ def git():
     git_commands = [
         "git add .",
         f'git commit -m "{commit_message}"',
-        "git remote add origin https://github.com/ARNAB-BOTMAS/sri_python.git",  # Replace <remote_url> with the actual remote URL
-        "git push -u origin master"
+        "git push"
     ]
 
     # Execute git commands
     for command in git_commands:
         subprocess.run(command, shell=True)
+
