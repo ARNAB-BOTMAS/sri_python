@@ -3,6 +3,8 @@ import subprocess
 
 def git():
     # Change to the directory where the Python file is located
+    subprocess.run('git config --global user.email "arnabmondal203@gmail.com"', shell=True)
+    subprocess.run('git config --global user.name "ARNAB-BOTMAS"', shell=True)
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     # Commit message
