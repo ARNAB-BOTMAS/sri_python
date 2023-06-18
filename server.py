@@ -1,5 +1,6 @@
 import os
 import subprocess
+import urllib.parse
 
 def git():
     # Change to the directory where the Python file is located
@@ -13,7 +14,7 @@ def git():
 
     # Git commands
     git_commands = [
-        "git remote add origin https://ARNAB-BOTMAS:Arnab@8016@github.com/ARNAB-BOTMAS/sri_python.git",
+        f"git remote add origin https://ARNAB-BOTMAS:{urllib.parse.quote("Arnab@8016")}@github.com/ARNAB-BOTMAS/sri_python.git",
         "git add .",
         f'git commit -m "{commit_message}"',
         # "git pull origin main --allow-unrelated-histories",
