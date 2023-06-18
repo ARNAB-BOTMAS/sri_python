@@ -13,7 +13,7 @@ def git():
 
     # Git commands
     git_commands = [
-        "git remote add origin https://github.com/ARNAB-BOTMAS/sri_python.git",
+        "git remote add origin https://ARNAB-BOTMAS@github.com/ARNAB-BOTMAS/sri_python.git",
         "git add .",
         f'git commit -m "{commit_message}"',
         # "git pull origin main --allow-unrelated-histories",
