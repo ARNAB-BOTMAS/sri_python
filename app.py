@@ -1,6 +1,6 @@
 import psycopg2
 import json
-from server import app
+import github_repo
 
 # Connection parameters
 url = 'postgres://srishti_database_user:Db6wKof7pq0kXcvTJt27Ko5AMhZoGV8a@dpg-ci7f8lenqql0ldbdt070-a.oregon-postgres.render.com/srishti_database'
@@ -44,4 +44,5 @@ print('JSON file created successfully.')
 # Close the cursor and connection
 cursor.close()
 conn.close()
-app.run(host='0.0.0.0', port=8080, debug=True)
+
+github_repo.git()
