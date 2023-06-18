@@ -195,13 +195,6 @@
             "gender": "Male",
             "password": "viper",
             "email": "junaidahhamed78@gmail.com"
-        },
-        {
-            "id": "SRISHTI0002322003APOSZ",
-            "name": "Arnab Mondal",
-            "gender": "Male",
-            "password": "Arnab123",
-            "email": "arnabmondal203@gmail.com"
         }
     ]
 }
