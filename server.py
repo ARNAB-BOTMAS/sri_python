@@ -10,8 +10,8 @@ def git():
     subprocess.run('git init', shell=True)
 
     # Set Git configuration
-    subprocess.run('git config --global user.email "you@example.com"', shell=True)
-    subprocess.run('git config --global user.name "Your Name"', shell=True)
+    subprocess.run('git config --global user.email "arnabmondal203@gmail.com"', shell=True)
+    subprocess.run('git config --global user.name "ARNAB-BOTMAS"', shell=True)
 
     # Commit message
     commit_message = "Automatic commit"
